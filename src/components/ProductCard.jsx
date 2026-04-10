@@ -6,8 +6,10 @@ function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
 
   function handleDecrement() {
+  if (quantity > 1) {
     setQuantity(quantity - 1);
   }
+}
 
   function handleIncrement() {
     setQuantity(quantity + 1);
