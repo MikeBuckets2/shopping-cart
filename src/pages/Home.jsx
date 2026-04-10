@@ -10,7 +10,7 @@ function Home() {
           <h1>Quality goods, no nonsense.</h1>
           <p>
             Browse our hand-picked selection of everyday items at prices that
-            actually make sense. No gimmicks, no flash sales — just good stuff.
+            actually make sense. No gimmicks, no flash sales just good stuff.
           </p>
           <Link to="/shop" className="hero-btn">
             Start Shopping
