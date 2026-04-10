@@ -15,7 +15,7 @@ function Shop({ addToCart }) {
         return res.json();
       })
       .then((data) => {
-        setProducts(data);
+        setProducts(data.products);
         setIsLoading(false);
       })
       .catch((err) => {
