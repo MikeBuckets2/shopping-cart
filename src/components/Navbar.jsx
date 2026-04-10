@@ -1,23 +1,29 @@
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../styles/Navbar.css';
 
 function Navbar({ cartCount }) {
   return (
     <nav className="navbar">
-      <a href="/" className="navbar-logo">ShopReact</a>
+      <Link to="/" className="navbar-logo">ShopReact</Link>
       <ul className="navbar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/shop">Shop</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/shop">Shop</Link></li>
         <li>
-          <a href="/cart" className="cart-link">
+          <Link to="/cart" className="cart-link">
             Cart
             {cartCount > 0 && (
               <span className="cart-badge">{cartCount}</span>
             )}
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  cartCount: PropTypes.number.isRequired,
+};
 
 export default Navbar;
