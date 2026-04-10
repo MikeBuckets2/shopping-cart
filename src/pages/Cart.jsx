@@ -5,9 +5,8 @@ import '../styles/Cart.css';
 
 function Cart({ cartItems, updateQuantity, removeFromCart }) {
 
-  // Bug: forgot to multiply by quantity
   const totalPrice = cartItems.reduce(
-    (sum, item) => sum + item.price,
+    (sum, item) => sum + item.price * item.quantity,
     0
   );
 
