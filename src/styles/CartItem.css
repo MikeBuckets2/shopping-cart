@@ -1,20 +1,20 @@
 .cart-item {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   align-items: flex-start;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
 }
 
 .cart-item-img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  background-color: var(--bg);
+  background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.5rem;
+  padding: 0.75rem;
   flex-shrink: 0;
+  filter: brightness(0.96);
 }
 
 .cart-item-info {
@@ -22,33 +22,34 @@
 }
 
 .cart-item-title {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 0.3rem;
+  line-height: 1.45;
+  margin-bottom: 0.4rem;
+  color: var(--text);
 }
 
 .cart-item-price {
-  font-size: 0.8rem;
+  font-size: 0.775rem;
   color: var(--text-muted);
-  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
 }
 
 .cart-item-controls {
   display: flex;
   align-items: center;
   border: 1px solid var(--border);
-  border-radius: 2px;
-  overflow: hidden;
   width: fit-content;
 }
 
 .cart-item-controls button {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border: none;
-  background-color: var(--bg);
+  background-color: var(--surface-2);
   font-size: 1rem;
+  color: var(--text);
   cursor: pointer;
   transition: background-color 0.1s;
 }
@@ -58,13 +59,14 @@
 }
 
 .cart-item-qty {
-  width: 36px;
+  width: 38px;
   text-align: center;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
-  line-height: 30px;
+  line-height: 32px;
 }
 
 .cart-item-right {
@@ -77,18 +79,23 @@
 
 .cart-item-subtotal {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--accent-warm);
+  letter-spacing: 0.02em;
 }
 
 .remove-btn {
   background: none;
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  text-decoration: underline;
   padding: 0;
+  transition: color 0.12s;
 }
 
 .remove-btn:hover {
-  color: var(--accent);
+  color: var(--text);
 }
