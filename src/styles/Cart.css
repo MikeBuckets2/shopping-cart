@@ -1,84 +1,97 @@
 .cart {
-  max-width: 780px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 4rem 3rem;
 }
 
 .cart-heading {
-  font-family: var(--font-display);
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
 }
 
 .cart-list {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .cart-summary {
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .cart-total {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.04em;
 }
 
 .checkout-btn {
-  background-color: var(--accent);
-  color: #fff;
+  background-color: var(--text);
+  color: var(--bg);
   border: none;
-  padding: 0.75rem 2rem;
-  font-size: 0.875rem;
-  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-radius: 2px;
+  letter-spacing: 0.14em;
   transition: background-color 0.15s;
 }
 
 .checkout-btn:hover {
-  background-color: var(--accent-dark);
+  background-color: var(--accent-warm);
 }
 
 .cart-empty {
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
   color: var(--text-muted);
 }
 
 .cart-empty p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .back-to-shop {
   display: inline-block;
-  border: 1px solid var(--text);
-  padding: 0.6rem 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border-radius: 2px;
-  transition: background-color 0.15s, color 0.15s;
+  border: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.15s, border-color 0.15s;
 }
 
 .back-to-shop:hover {
-  background-color: var(--text);
-  color: #fff;
+  color: var(--text);
+  border-color: var(--text);
 }
 
 @media (max-width: 600px) {
+  .cart {
+    padding: 3rem 1.25rem;
+  }
   .cart-summary {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
     text-align: center;
   }
-  .checkout-btn { width: 100%; }
+  .checkout-btn {
+    width: 100%;
+  }
 }
